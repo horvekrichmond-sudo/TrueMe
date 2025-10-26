@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, ImageBackground } from 'react-native'
 import Dashboardbg from "@/assets/images/gradient.png"
 import React from 'react'
 
-const app = () => {
+const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <ImageBackground source={Dashboardbg} resizeMode="cover" style={styles.image}> 
@@ -12,7 +12,7 @@ const app = () => {
   )
 }
 
-export default app
+export default HomeScreen;
 
 const styles = StyleSheet.create({
   container: {
@@ -35,5 +35,3 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 })
-
-//
