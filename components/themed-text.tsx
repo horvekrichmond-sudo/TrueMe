@@ -1,11 +1,12 @@
 import { StyleSheet, Text, type TextProps } from 'react-native';
 
+import { Typography } from '@/constants/theme';
 import { useThemeColor } from '@/hooks/use-theme-color';
 
 export type ThemedTextProps = TextProps & {
   lightColor?: string;
   darkColor?: string;
-  type?: 'default' | 'title' | 'defaultSemiBold' | 'subtitle' | 'link';
+  type?: 'default' | 'title' | 'subtitle' | 'caption' | 'link';
 };
 
 export function ThemedText({
@@ -22,9 +23,9 @@ export function ThemedText({
       style={[
         { color },
         type === 'default' ? styles.default : undefined,
-        type === 'title' ? styles.title : undefined,
-        type === 'defaultSemiBold' ? styles.defaultSemiBold : undefined,
-        type === 'subtitle' ? styles.subtitle : undefined,
+        type === 'title' ? Typography.title : undefined,
+        type === 'subtitle' ? Typography.subtitle : undefined,
+        type === 'caption' ? Typography.caption : undefined,
         type === 'link' ? styles.link : undefined,
         style,
       ]}
@@ -33,24 +34,13 @@ export function ThemedText({
   );
 }
 
+/**
+ * Note: Most typography styles should come from the central `Typography` object in `theme.ts`.
+ * Only styles that are unique to this component and don't fit the global theme should be here.
+ */
 const styles = StyleSheet.create({
   default: {
-    fontSize: 16,
-    lineHeight: 24,
-  },
-  defaultSemiBold: {
-    fontSize: 16,
-    lineHeight: 24,
-    fontWeight: '600',
-  },
-  title: {
-    fontSize: 32,
-    fontWeight: 'bold',
-    lineHeight: 32,
-  },
-  subtitle: {
-    fontSize: 20,
-    fontWeight: 'bold',
+    ...Typography.body,
   },
   link: {
     lineHeight: 30,
