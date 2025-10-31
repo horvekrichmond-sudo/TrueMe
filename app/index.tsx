@@ -1,6 +1,6 @@
 import { Redirect } from 'expo-router';
 
-export default function RootIndex() {
-  // This component automatically redirects to the onboarding screen.
+export default function Index() {
+  // This component will automatically redirect to the onboarding screen.
   return <Redirect href="/onboarding" />;
 }

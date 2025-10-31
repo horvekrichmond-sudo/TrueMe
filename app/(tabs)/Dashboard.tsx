@@ -4,7 +4,7 @@ import Dashboardbg from '@/assets/images/gradient.png';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 
-const HomeScreen = () => {
+const Dashboard = () => {
   return (
     <ThemedView style={styles.container}>
       <ImageBackground source={Dashboardbg} resizeMode="cover" style={styles.image}>
@@ -16,7 +16,7 @@ const HomeScreen = () => {
   );
 };
 
-export default HomeScreen;
+export default Dashboard;
 
 const styles = StyleSheet.create({
   container: {
