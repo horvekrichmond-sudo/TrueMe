@@ -20,12 +20,16 @@ export default function WelcomeScreen() {
 
   const handleCreateIdentity = () => {
     setIsCreating(true);
-    console.log('Navigating to identity creation flow...');
+    console.log('Identity creation started...');
     // In a real app, you would navigate to the next step of the onboarding flow.
     // e.g., router.push('/onboarding/create-pin');
     setTimeout(() => {
       setIsCreating(false);
     }, 500);
+
+    console.log('Navigating to dashboard screen...');
+
+    router.replace('/dashboard');
   };
 
   const handleSignIn = () => {
