@@ -4,30 +4,24 @@ import Dashboardbg from '@/assets/images/gradient.png';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 
-const modal = () => {
+const Reputation = () => {
   return (
     <ThemedView style={styles.container}>
-      <ImageBackground source={Dashboardbg} resizeMode="cover" style={styles.image}>
         <ThemedText type="title" style={styles.text}>
-          Modal Screen
+          TrueMe Reputation Center
         </ThemedText>
-      </ImageBackground>
     </ThemedView>
   );
 };
 
-export default modal;
+export default Reputation;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-  },
-  image: {
     flex: 1,
     justifyContent: 'center',
   },
   text: {
     textAlign: 'center',
-    backgroundColor: '#000000a0',
   },
 });

@@ -68,6 +68,7 @@ export const Colors = {
     // Semantic
     success: Palette.success,
     danger: Palette.danger,
+    overlay: 'rgba(0, 0, 0, 0.4)',
   },
   dark: {
     // Core
@@ -85,6 +86,7 @@ export const Colors = {
     // Semantic
     success: Palette.success,
     danger: Palette.accent500,
+    overlay: 'rgba(0, 0, 0, 0.6)',
   },
 };
 

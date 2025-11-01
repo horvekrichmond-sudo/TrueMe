@@ -20,6 +20,12 @@ const MAPPING = {
   'chevron.right': 'chevron-right',
   'wallet.pass.fill': 'wallet',
   'gearshape.fill': 'settings',
+  'person.fill': 'person',
+  'checkmark.shield.fill': 'verified-user', // For Consent
+  'medal.fill': 'military-tech',          // For Reputation
+  'checkmark.seal.fill': 'verified',        // For Verification
+  'square.grid.2x2.fill': 'dashboard',      // For Dashboard
+  
 } as IconMapping;
 
 /**

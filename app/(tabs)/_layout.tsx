@@ -20,7 +20,7 @@ export default function TabLayout() {
         name="dashboard"
         options={{
           title: 'Dashboard',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="square.grid.2x2.fill" color={color} />,
         }}
       />
       <Tabs.Screen
@@ -28,6 +28,27 @@ export default function TabLayout() {
         options={{
           title: 'Wallet',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="wallet.pass.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="consent"
+        options={{
+          title: 'Consent',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="checkmark.shield.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="reputation"
+        options={{
+          title: 'Reputation',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="medal.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="verification"
+        options={{
+          title: 'Verification',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="checkmark.seal.fill" color={color} />,
         }}
       />
     </Tabs>
